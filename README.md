@@ -1,0 +1,1 @@
+# gerarstories.com.br
