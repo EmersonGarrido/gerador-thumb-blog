@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/thumbnail.png",
+      "destination": "/api/thumbnail"
+    },
+    {
+      "source": "/api/stories.png",
+      "destination": "/api/stories"
+    }
+  ]
+}

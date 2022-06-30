@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-inter;
+  }
+}
+
+@media (max-width: 1023px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 639px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+@import './classes.css';

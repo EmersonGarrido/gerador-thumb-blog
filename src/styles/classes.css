@@ -1,0 +1,78 @@
+[data-control='slide'] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control='slide'] li a {
+  --background: rgba(0, 0, 0, 0.2);
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--background);
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+html:where(.dark) [data-control='slide'] li a {
+  --background: rgba(255, 255, 255, 0.2);
+}
+
+html:where(.light) [data-control='slide'] li.active a,
+html:where(.light) [data-control='slide'] li a:hover {
+  --background: rgba(0, 0, 0, 0.6);
+}
+
+html:where(.dark) [data-control='slide'] li.active a,
+html:where(.dark) [data-control='slide'] li a:hover {
+  --background: rgba(255, 255, 255, 0.6);
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.sun-and-moon > :is(.moon, .sun, .sun-beams) {
+  transform-origin: center center;
+}
+
+html.light .sun-and-moon > .sun {
+  transform: scale(1.75);
+}
+
+html.light .sun-and-moon > .sun-beams {
+  opacity: 0;
+}
+
+html.light .sun-and-moon > .moon > circle {
+  transform: translateX(-7px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sun-and-moon > .sun {
+    transition: transform 0.5s cubic-bezier(0.69, 0.39, 0.18, 0.72);
+  }
+
+  .sun-and-moon > .sun-beams {
+    transition: transform 0.5s cubic-bezier(0.69, 0.39, 0.18, 0.72),
+      opacity 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  }
+
+  html.light .sun-and-moon > .sun {
+    transform: scale(1.75);
+    transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
+    transition-duration: 0.25s;
+  }
+
+  html.light .sun-and-moon > .sun-beams {
+    transform: rotateZ(-25deg);
+    transition-duration: 0.15s;
+  }
+
+  html.light .sun-and-moon > .moon > circle {
+    transition-delay: 0.25s;
+    transition-duration: 0.5s;
+  }
+}
