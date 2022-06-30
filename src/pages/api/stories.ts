@@ -13,10 +13,9 @@ export default async function handle(
     const query = req.query;
 
     const title = String(query.title);
-    const description = String(query.description);
-    const capa = String(query.capa);
+    const image = String(query.image);
 
-    const html = getHtmlThumb({ title, description, capa });
+    const html = getHtmlThumb({ title, image });
 
     if (isHtmlDebug) {
       res.setHeader('Content-Type', 'text/html');
