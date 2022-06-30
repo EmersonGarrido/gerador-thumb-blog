@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <div className="p-6 border-white/10 m-5 rounded-xl border-[0.05rem] text-center flex flex-col items-center gap-3">
           <span className="text-white ml-2 "> Modelo de Stories </span>
           <img src={stories} className="h-[500px] rounded-md" />
-          <button className="bg-white w-[250px] hover:bg-slate-100 text-black font-bold p-2 rounded-full">Baixar</button>
+          <a href={stories} download className="bg-white w-[250px] hover:bg-slate-100 text-black font-bold p-2 rounded-full">Baixar</a>
         </div>
 
         <div className="text-center text-white"><p>Projeto desenvolvido por <b>Emerson Garrido</b></p></div>
