@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <form onSubmit={handleSubmit(handleGerateStories)} className="p-6 border-white/10 m-5 rounded-xl border-[0.05rem]">
           <div className="flex flex-col gap-5">
             <span className="text-white ml-2">Escreva o texto </span>
-            <textarea  {...register("title", { required: true })} className="rounded-md" />
+            <textarea  {...register("title", { required: true })} className="rounded-md text-black" />
             <input type="text"  {...register("capa", { required: true })} value="https://cdn.cgn.inf.br/cgn-cdn/fotos-cgn/2021/12/22154638/Chloe.jpg" hidden />
             {errors.exampleRequired && <span>This field is required</span>}
             <button type="submit" className="bg-white hover:bg-slate-100 text-black font-bold p-2 rounded-full">Gerar Stories</button>
