@@ -1,6 +1,6 @@
 ### Projeto OPEN-SOURCE
 
-##### www.geradordestories.com.br 
+##### www.gerarstories.com.br
 
 Ideia do projeto sem fins lucrativos para estudos.
 
