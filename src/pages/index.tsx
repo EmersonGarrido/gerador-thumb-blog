@@ -24,7 +24,7 @@ const Home: NextPage = () => {
     <div className="dark:bg-dark flex justify-center items-center pb-40">
       <div className="w-[700px] h-[100%]">
         <div className="text-center pt-10">
-          <h1 className="font-light text-white text-2xl">Gerador de <b className="font-bold">Stories.com</b></h1>
+          <h1 className="font-light text-white text-2xl">Gerar <b className="font-bold">Stories.com.br</b></h1>
         </div>
 
         <form onSubmit={handleSubmit(handleGerateStories)} className="p-6 border-white/10 m-5 rounded-xl border-[0.05rem]">
