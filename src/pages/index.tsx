@@ -75,7 +75,7 @@ const Home: NextPage = () => {
                 memes.map((meme: any) => {
                   return (
                     <button key={meme.id} onClick={() => setCapa(meme.url)}>
-                      <img src={meme.url} className="w-[100px] h-[100px]" />
+                      <img src={meme.url} className="w-[100px] h-[70px] md:h-[100px]" />
                     </button>
                   )
                 })
